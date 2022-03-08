@@ -1,0 +1,156 @@
+/* #1 Done */
+body{
+    font-family: Poppins, serif;
+    background-image: url(../images/concrete_seamless.png);
+    background-color: #f1f1f1;
+}
+
+/* #2 Done */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #3 Done */
+.nav_links{
+    display:flex;
+    flex-direction: column;
+}
+
+/* #4 Done */
+.nav_links a:visited{
+color: #0000EE;
+}
+
+.nav_links a:hover{
+    color: #50C7C7;
+}
+
+/* #5/6 Done*/
+.card>header{
+background-color:  #288088;
+border: solid 2px  #45ADAD;
+padding-top: 20px;
+padding-bottom: 20px;
+border-radius: 50px 50px 0 0;
+}
+
+/* #7 Done */
+.pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* # 8 Done */
+.card{
+    flex-basis: 450px;
+    border-radius: 50px 50px 0 0;;
+}
+/* #9 Done */
+.gallery img{
+    border: solid 10px #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+
+/* #10 Done */
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+/* #11 Done */
+header img{
+    animation-name: appear;
+    animation-duration:  5s ;
+}
+@keyframes appear{
+   from{opacity: 0;}
+   to{opacity: 1;}
+   from{width: 25px;}
+   to{width: 475px}
+}
+
+/* #12/#14 In Progress */
+@media screen and (min-width: 900px){
+    body>header{
+        flex-direction: row;
+        justify-content:space-between;
+        /* position: fixed;
+        width: 100%; */
+        }
+
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        }
+/* #13 Done */
+    .pricing{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-basis: 250px;
+    }
+}
+/* #15 Done */
+@media screen and (prefers-reduced-motion: reduce) {
+    .header img{
+        animation: none
+    }
+}
+
+/* #16 In Progress */
+@media print {
+    .body{
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-image: none; */
+    }
+
+/* #17 in progress */
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+/* #18 Done */
+    .pricing{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items:inherit;
+    }
+
+    /* .card{
+        align-items:baseline;
+    } */
+
+/* #19 Done */
+    .card{
+        border: solid 2px  #45ADDD;
+        flex-basis: 325px;
+    }
+
+/* #20 In Progress */
+    .gallery{
+        display:none
+    }
+    #gallery{
+        display:none
+    }
+
+/* #21 In Progress */
+
+}
