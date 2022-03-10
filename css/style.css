@@ -67,15 +67,15 @@ border-radius: 50px 50px 0 0;
 }
 
 /* #11 Done */
-header img{
+#logo{
     animation-name: appear;
-    animation-duration:  5s ;
+    animation-duration:  5s;
 }
 @keyframes appear{
    from{opacity: 0;}
    to{opacity: 1;}
    from{width: 25px;}
-   to{width: 475px}
+   to{width: 475px;}
 }
 
 /* #12/#14 In Progress */
@@ -99,30 +99,26 @@ header img{
         flex-basis: 250px;
     }
 }
-/* #15 Done */
-@media screen and (prefers-reduced-motion: reduce) {
-    .header img{
-        animation: none
-    }
-}
 
-/* #16 In Progress */
+
+/* #16 Done */
 @media print {
     .body{
         font-family: Arial, Helvetica, sans-serif;
-        /* background-image: none; */
+        background-image: none;
     }
 
-/* #17 in progress */
-    .nav{
+/* #17 Done */
+    nav{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        width: 100%;
     }
     .nav_links{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     }
 
 /* #18 Done */
@@ -143,7 +139,7 @@ header img{
         flex-basis: 325px;
     }
 
-/* #20 In Progress */
+/* #20 Done */
     .gallery{
         display:none
     }
@@ -151,6 +147,13 @@ header img{
         display:none
     }
 
+   
 /* #21 In Progress */
 
-}
+} 
+/* #15 Done */
+    @media screen and (prefers-reduced-motion: reduce) {
+        #logo{
+            animation: none;
+        }
+    }
